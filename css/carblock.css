@@ -1,0 +1,120 @@
+.black_block {
+  width: 100%;
+  height: max-content;
+  background-color: rgba(14, 13, 13, 0.98);
+}
+.block-cars {
+  display: grid;
+  padding-top: 160px;
+}
+.title {
+  position: absolute;
+
+  color: white;
+  font-size: 64px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  margin: 50px 150px;
+}
+.cars {
+    border-radius: 5%;
+    opacity: 0.6;
+  position: relative;
+  display: inline-block;
+
+  align-self: center;
+  justify-self: center;
+
+  background-color: white;
+  background-image: url(../img/cars/audi\ quattro.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  height: 420px;
+  width: 360px;
+  margin: 50px 100px;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+.cars:nth-child(2) {
+  background-image: url(../img/cars/bmw\ 6\ series.jpg);
+}
+.cars:nth-child(3) {
+  background-image: url(../img/cars/delorean.jpg);
+}
+.cars:nth-child(4) {
+  background-image: url(../img/cars/MB\ 190.jpg);
+}
+.cars:nth-child(5) {
+  background-image: url(../img/cars/mercedez\ benz\ s-klasse.jpg);
+}
+.cars:nth-child(6) {
+  background-image: url(../img/cars/porshe\ 928.jpg);
+}
+.cars:nth-child(7) {
+  background-image: url(../img/cars/renauit\ 25.jpg);
+}
+.cars:nth-child(8) {
+  background-image: url(../img/cars/volvo\ 760.jpg);
+}
+.info {
+  position: absolute;
+  bottom: 0;
+
+  font-size: xx-large;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-shadow: #fc0 1px 0 10px;
+  color: darkblue;
+
+  padding: 10px;
+  transition: 1s;
+}
+.cars:hover {
+    opacity: 1;
+    background-size: 105%;
+}
+.cars:hover .perenos {
+  left: 30px;
+}
+.cars:hover .info {
+  margin-left: 10px;
+  transform: scale(1.1);
+}
+.perenos {
+  position: relative;
+  left: 10px;
+  transition: 1s;
+}
+@media (max-width: 1000px) {
+  .title {
+    font-size: xx-large;
+  }
+}
+.new {
+  background-image: url(../img/cars/New/Ferrari_Roma_Tailor_Made_for_Cool_Hunting_\(F169\)_611807_1280x853.jpg);
+}
+.new:nth-child(2) {
+  background-image: url(../img/cars/New/Audi_R8_V10_performance_RWD_2022_Yellow_Metallic_612027_1280x853.jpg);
+}
+.new:nth-child(3) {
+  background-image: url(../img/cars/New/Bentley_Mulliner_Batur_2023_Grey_Metallic_Coupe_612826_1280x853.jpg);
+}
+.new:nth-child(4) {
+  background-image: url(../img/cars/New/Ferrari_Tuning_Mansory_Monza_SP2_2022_Red_Metallic_612293_1280x853.jpg);
+}
+.new:nth-child(5) {
+  background-image: url(../img/cars/New/mustang.webp);
+}
+.new:nth-child(6) {
+  background-image: url(../img/cars/New/Skoda_Fabia_Monte_Carlo_2022_Red_Metallic_612101_1280x853.jpg);
+}
+.new:nth-child(7) {
+  background-image: url(../img/cars/New/Белый\ джип.jpg);
+}
+.new:nth-child(8) {
+  background-image: url(../img/cars/New/седан.jpg);
+}

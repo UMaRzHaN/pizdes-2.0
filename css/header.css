@@ -1,0 +1,159 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    padding: 10px;
+
+    display: block;
+
+
+    width: 80%;
+    height: 80px;
+    background: linear-gradient(45deg, #f5f5f5, #e90000);
+
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(104, 0, 104);
+
+    border: 3px black solid;
+    border-radius: 14px;
+}
+
+a {
+    padding-right: 50px;
+    display: inline;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #EEF1FF;
+}
+
+/* a:hover:nth-child(1){
+border-bottom: none;
+} */
+.menu {
+    display: none;
+
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 20, 24) 100%);
+    z-index: 10;
+    border: 2px white solid;
+}
+
+.service {
+    position: relative;
+
+    cursor: pointer;
+    padding-right: 50px;
+    display: inline-block;
+
+
+}
+
+.service:hover .menu {
+    display: block;
+
+
+}
+
+.block {
+    display: inline;
+}
+
+.logo {
+    position: relative;
+    background-image: url(../img/logo.jpg);
+    background-size: 100%;
+
+}
+
+.block_burger {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 80px;
+    background-color: rgba(0, 255, 255, 0.8);
+    z-index: 10;
+}
+
+.bars {
+    display: inline;
+    cursor: pointer;
+    float: right;
+}
+
+.burger {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.burger:hover .block_burger {
+    display: flex;
+}
+
+@media (max-width:1400px) {
+    header {
+        font-size: x-large;
+        height: max-content;
+    }
+}
+
+@media (max-width:1000px) {
+    .menu {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        font-size: small;
+        height: max-content;
+    }
+
+    a {
+        padding-right: 10px;
+    }
+
+    .service {
+        padding-right: 10px;
+
+    }
+
+    .burger {
+        display: inline;
+    }
+
+    a:nth-child(4) {
+        display: none;
+    }
+
+    a:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .block_burger {
+        top: 40px;
+    }
+
+    .bars {
+        position: absolute;
+        margin: 5px;
+    }
+}

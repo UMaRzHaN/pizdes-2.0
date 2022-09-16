@@ -1,0 +1,73 @@
+.service_block {
+  width: 100%;
+  height: max-content;
+  background-color: rgba(14, 13, 13, 0.98);
+  position: absolute;
+
+  font-size: 64px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+
+  display: grid;
+  grid-template-areas:
+    "b1 b2 img"
+    "b3 b4 img";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.text-service {
+  position: relative;
+  left: 80px;
+  grid-area: b1;
+  width: 40%;
+  position: relative;
+  margin-top: 200px;
+  font-size: xx-large;
+
+  gap: 10px;
+  margin-right: 40px;
+}
+.tiny_title {
+  font-size: 48px;
+}
+.bold {
+  font-size: 52px;
+}
+.text-service:nth-child(2) {
+  grid-area: b2;
+}
+.text-service:nth-child(3) {
+  top: -200px;
+  grid-area: b3;
+}
+.text-service:nth-child(4) {
+  top: -200px;
+  grid-area: b4;
+}
+.service-image {
+  grid-area: img;
+  position: relative;
+  top: 200px;
+  right: 200px;
+  background-image: url(../img/cars/New/engineer-png-5a3a8e509a2a31.0176891815137869606315-removebg-preview.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1500px;
+  transition: 2s;
+}
+
+.service-image:hover {
+  background-size: 105%;
+  right: 250px;
+}
+.text-service:hover .gold{
+    color: gold;
+}
+.text-service:hover .brown {
+    color: brown;
+}
+.text-service:hover .aqua{
+    color: aqua;
+}
+.text-service:hover .red{
+    color: darkred;
+}

@@ -1,0 +1,198 @@
+.block__ {
+  z-index: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  background-image: url(../img/about.jpg);
+opacity: 90%;
+  margin: 20px;
+  padding: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 900px;
+  width: 90%;
+
+  font-size: 64px;
+  font-family: "Oswald", sans-serif;
+  color: rgba(255, 0, 0, 0.8);
+
+  background-color: rgba(170, 196, 255,0.7);
+  border-radius: 10%;
+}
+.text {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-image: url(../img/smoke.jpg);
+  background-size: 100%;
+
+  border: 2px solid wheat;
+  border-radius: 50%;
+
+  position: relative;
+  right: -300px;
+
+  transition: 1s;
+
+  cursor: pointer;
+  display: block;
+}
+.text:nth-child(2) {
+  display: block;
+    overflow: hidden;
+  color: rgba(55, 73, 21, 0.8);
+  right: 300px;
+}
+.text:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 200px;
+
+  color: blueviolet;
+
+  display: inline;
+  border-radius: 50%;
+
+  left: 200px;
+  bottom: 10px;
+}
+.text:nth-child(3):hover {
+  color: brown;
+
+}
+
+.text:nth-child(2):hover {
+  color: brown;
+
+}
+.text:nth-child(2):hover {
+  color: brown;
+
+}
+
+.text:hover {
+  color: brown;
+  background-image: none;
+  background-color:  darkblue;
+}
+.text:nth-child(2):hover .back {
+  display: block;
+}
+.front, .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    transition: all .7s;
+}
+.car-logo{
+  transform: rotateY(180grad);
+  background-image: url(../img/new_car_logo-removebg-preview.png);
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: 70px;
+}
+.old{
+  transform: rotateY(180grad);
+  background-image: url(../img/old_car_logo-removebg-preview.png);
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  display: none;
+}
+.text:nth-child(2):hover .front  {
+    margin-left:-1500px;
+}
+.back {
+    margin-left:-1500px;
+}
+.text:nth-child(2):hover .back {
+    margin-left:0;
+}
+.text:nth-child(2):hover .car-logo {
+  display: none;
+  }
+  .text:nth-child(2):hover .old {
+    display: inline-block;
+    }
+@media (max-width:1400px) {
+    .text {  
+        padding: 20px;
+        right: 0;
+        margin: 10px;
+    }
+    .about {
+        margin: 20px;
+        padding: 0;
+
+        width: 60%;
+        font-size: large;
+        height: 500px;
+    }
+    .text:nth-child(2) {
+
+      right: 0;
+    }
+    .text:nth-child(3) {
+      left: 10px;
+      bottom: -30px;
+    }
+    .car-logo{
+      height: 150px;
+      width: 150px;
+      top: 50px;
+    }
+    .old{
+      height: 150px;
+      width: 150px;
+      top: 60px;
+    }
+}
+@media (max-width:1000px) {
+    .text {  
+        padding: 20px;
+        right: 0;
+        margin: 10px;
+    }
+    .about {
+        margin: 20px;
+        padding: 0;
+
+        width: 60%;
+        font-size: small;
+        height: 440px;
+    }
+    .text:nth-child(2) {
+
+      right: 0;
+    }
+    .text:nth-child(3) {
+      left: 20px;
+      bottom: -20px;
+    }
+    .car-logo{
+      padding: 0;
+      margin: 0;
+      height: 150px;
+      width: 200px;
+      top: 30px;
+    }
+    .old{
+      padding: 0;
+      margin: 0;
+      height: 150px;
+      width: 200px;
+      top: 50px;
+    }
+}
